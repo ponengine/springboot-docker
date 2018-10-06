@@ -24,3 +24,6 @@
 remove ทุก container
 >docker stop $(docker ps -a -q)
 >docker rm $(docker ps -a -q)
+
+run image mysql
+>docker run --name "ชื่อ container" -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=test -e MYSQL_USER="กำหนดชื่อ" -e MYSQL_PASSWORD="กำหนด password" -d mysql:5.6
