@@ -14,5 +14,13 @@
 บังคับลบทุก images 
 > docker rmi -f $(docker images -a -q)
 
+
 ดูว่ามี contrainer ตัวไหนทำงานบ้าง
 >docker ps 
+
+ดู container ทั้งที่ทำงาน แล้วก็ หยุดทำงาน
+>docker ps -a
+
+remove ทุก container
+>docker stop $(docker ps -a -q)
+>docker rm $(docker ps -a -q)
