@@ -16,10 +16,10 @@
 
 
 ดูว่ามี contrainer ตัวไหนทำงานบ้าง
->docker ps 
+>docker container ps 
 
 ดู container ทั้งที่ทำงาน แล้วก็ หยุดทำงาน
->docker ps -a
+>docker container ps -a
 
 remove ทุก container
 >docker stop $(docker ps -a -q)
@@ -27,3 +27,9 @@ remove ทุก container
 
 run image mysql
 >docker run --name "ชื่อ container" -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=test -e MYSQL_USER="กำหนดชื่อ" -e MYSQL_PASSWORD="กำหนด password" -d mysql:5.6
+
+build project spring boot
+>docker build -f Dockerfile -t "ชื่อโปรเจค" .
+
+run container spring boot
+>docker run -p port:port "ชื่อโปรเจค"
