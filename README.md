@@ -1,19 +1,17 @@
 # springboot-docker
 #### Linux ทั่วไป
 
-- ดูทั้งหมด
+ดูทั้งหมด
 > -a
-- ดู permission
+ดู permission
 > -l
+force
+>-f
 
 #### Docker command ที่ใช้บ่อย
 
 ลบ ทุก images
 >docker rmi $(docker images -q)
-
-บังคับลบทุก images 
-> docker rmi -f $(docker images -a -q)
-
 
 ดูว่ามี contrainer ตัวไหนทำงานบ้าง
 >docker container ps 
