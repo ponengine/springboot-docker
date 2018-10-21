@@ -24,10 +24,13 @@ remove ทุก container
 >docker rm $(docker ps -a -q)
 
 ดูรายละเอียด container
->docker inspect ชื่อหรือไอดีคอนเทรนเนอร์
+>docker inspect "ชื่อหรือไอดีคอนเทรนเนอร์"
 
 run image mysql
 >docker run --name "ชื่อ container" -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=test -e MYSQL_USER="กำหนดชื่อ" -e MYSQL_PASSWORD="กำหนด password" -d mysql:5.6
+
+เข้าถึง container mysql
+>docker exec -it "ชื่อ container" bash
 
 build project spring boot
 >docker build -f Dockerfile -t "ชื่อโปรเจค" .
