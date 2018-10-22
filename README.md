@@ -38,4 +38,7 @@ build project spring boot
 run container spring boot
 >docker run -p port:port "ชื่อโปรเจค"
 
+run real logs
+>docker logs -f  "containerId"
+
 
