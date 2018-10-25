@@ -3,10 +3,8 @@
 
 ดูทั้งหมด
 > -a 
-<br />
 ดู permission
 > -l
-<br />
 force
 > -f
 
