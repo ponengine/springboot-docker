@@ -2,11 +2,13 @@
 #### Linux ทั่วไป
 
 ดูทั้งหมด
-> '-a'
+> -a 
+<br />
 ดู permission
-> '-l'
+> -l
+<br />
 force
-> '-f'
+> -f
 
 #### Docker command ที่ใช้บ่อย
 
