@@ -41,4 +41,9 @@ run container spring boot
 run real logs
 >docker logs -f  "containerId"
 
+docker-compose
+ในการ config คำสั่ง docker-compose 
+-จะไม่สามารถใช้คำสั่ง tab ในการเขียนไฟล์ .yml ได้จะเกิด error '\t' 
+-ในการระบุชื่อ หรือคำสั่งต่างๆหลังจาก ':' ต้องมีการเว้นวรรคเสมอ
+
 
