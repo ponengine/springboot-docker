@@ -1,12 +1,9 @@
 # springboot-docker
 #### Linux ทั่วไป
 
-ดูทั้งหมด
-- -a 
-ดู permission
-- -l
-force
-- -f
+- -a  ดูทั้งหมด
+- -l  ดูpermission
+- -f force
 
 #### Docker command ที่ใช้บ่อย
 
